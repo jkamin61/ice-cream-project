@@ -4,19 +4,16 @@
     align-items: center;
     padding-top: 121px;
     padding-bottom: 98px;
-    border: 1px solid blue;
 
     &__item {
         position: relative;
         margin-top: 130px;
-        border: 1px solid green;
     }
 
     &__label {
         font-size: 18px;
         line-height: 1.16;
         color: #FFA5BA;
-        border: 1px solid orangered;
     }
 
     &__title {
@@ -26,7 +23,6 @@
         color: #D41443;
         margin-top: 15px;
         margin-bottom: 31px;
-        border: 1px solid violet;
     }
 
     &__grid {
@@ -34,7 +30,6 @@
         flex-direction: column;
         align-items: center;
         list-style: none;
-        border: 1px solid purple;
     }
 
     &__pic img {
@@ -96,7 +91,6 @@
         margin-bottom: 120px;
         margin-left: 40px;
         margin-right: 40px;
-        border: 1px solid black;
     }
 }
 
