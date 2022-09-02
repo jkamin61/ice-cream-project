@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="customer-reviews container">
+      <!-- Tutaj sekcja z opinią, avatarem (JPG) i svg od cytatu - wymaga podpięcia JavaScript, ale to potem -->
+      <div class="customer-reviews__review">
+        <div class="customer-reviews__block">
+          <picture class="customer-reviews__avatar-picture">
+            <source
+              srcset="./images/third-avatar.jpg 1x, ./third-avatar2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./images/third-avatar.jpg 1x, ./third-avatarx2.jpg 2x"
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="./images/third-avatar.jpg 1x, ./third-avatarx2.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="customer-reviews__img"
+              src="./images/third-avatar2x.jpg"
+              alt="Customer Avatar"
+            />
+          </picture>
+          <!-- ::before svg-->
+          <svg width="54" height="40" class="customer-reviews__svg-quote">
+            <use href="./images/icons.svg#icon-Quote"></use>
+          </svg>
+          <!-- treść opinii-->
+          <q class="customer-reviews__opinion">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </q>
+        </div>
+        <!-- sekcja z trzema kropkami svg, imie+lokalizacja oraz listą z domkiem i dotami-->
+        <section class="customer-reviews__svg-block">
+          <ul class="customer-reviews__svg-list">
+            <li class="customer-reviews__svg-item">
+              <svg width="4" height="4" class="customer-reviews__svg-dot">
+                <use href="./images/icons.svg#icon-Home"></use>
+              </svg>
+            </li>
+
+            <li class="customer-reviews__svg-item">
+              <svg class="customer-reviews__svg-dot">
+                <use href="./images/icons.svg#icon-Quote"></use>
+              </svg>
+            </li>
+
+            <li class="customer-reviews__svg-item">
+              <svg class="customer-reviews__svg-dot">
+                <use href="./images/icons.svg#icon-Elipse"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="customer-reviews__name-div">
+            <h2 class="customer-reviews__name">Emily, Los Angeles</h2>
+          </div>
+          <div class="customer-reviews__slide-block">
+            <ul class="customer-reviews__second-list">
+              <li class="customer-reviews__second-list-item">
+                <svg width="13" height="12" class="customer-reviews__second-svg">
+                  <use href="./images/icons.svg#icon-Home"></use>
+                </svg>
+              </li>
+              <li class="customer-reviews__second-list-item">
+                <svg class="customer-reviews__second-svg">
+                  <use href="./images/icons.svg#icon-Elipse"></use>
+                </svg>
+              </li>
+              <li class="customer-reviews__second-list-item">
+                <svg class="customer-reviews__second-svg">
+                  <use href="./images/icons.svg#icon-Elipse"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
