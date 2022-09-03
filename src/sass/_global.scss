@@ -16,25 +16,12 @@ body {
   padding: 0px 20px;
 }
 
-h1 {
-  font-size: 48px;
-  line-height: 0.96;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: getColor('title-color');
-}
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   body {
     max-width: 768px;
   }
   .container {
     padding: 0px 36px;
-  }
-  h1 {
-    font-size: 34px;
-    line-height: 0.91;
   }
 }
 
@@ -44,9 +31,5 @@ h1 {
   }
   .container {
     padding: 0px 115px;
-  }
-  h1 {
-    font-size: 58px;
-    line-height: 0.9;
   }
 }
