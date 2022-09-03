@@ -1,9 +1,17 @@
-.products__wrap {
+.products {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 121px;
     padding-bottom: 98px;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 121px;
+        padding-bottom: 98px;
+    }
 
     &__item {
         position: relative;
@@ -11,16 +19,18 @@
     }
 
     &__label {
+        font-family: 'Titan One';
         font-size: 18px;
         line-height: 1.16;
-        color: #FFA5BA;
+        color: getColor("title-helper");
     }
 
     &__title {
+        font-family: 'Titan One';
         font-size: 34px;
         line-height: 1.15;
         letter-spacing: 0.04em;
-        color: #D41443;
+        color: getColor("title-color");
         margin-top: 15px;
         margin-bottom: 31px;
     }
@@ -60,24 +70,45 @@
     &__bg {
 
         &--pink {
-            background-color: #FFB8CA;
+            background-color: getColor("main-color");
         }
 
         &--beige {
-            background-color: #F0D1A5;
+            background-color: getColor("secound-main");
         }
 
         &--mint {
-            background-color: #C2E297;
+            background-color: getColor("third-main");
         }
     }
 
     &__name {
+        font-family: 'Titan One';
         font-size: 20px;
         line-height: 23px;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
+        color: getColor("basic-color");
         padding-top: 161px;
+    }
+
+    &__dot {
+        display: inline-flex;
+        gap: 4px;
+        margin-top: 30px;
+
+        &--item {
+            height: 6px;
+            width: 6px;
+            background-color: getColor("basic-color");
+            border-radius: 50%;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus-within {
+                cursor: pointer;
+                transform: scale(1.5);
+            }
+        }
     }
 
     &__desc {
@@ -85,18 +116,43 @@
         font-size: 14px;
         line-height: 152%;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
+        color: getColor("basic-color");
         text-align: center;
-        margin-top: 66px;
-        margin-bottom: 120px;
+        margin-top: 30px;
         margin-left: 40px;
         margin-right: 40px;
+    }
+
+    &__button {
+        background-color: getColor("basic-color");
+        border-radius: 50%;
+        border: none;
+        color: getColor("title-color");
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        &:after {
+            content: '\279C';
+        }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
-    .products__wrap {
+    .products {
 
         &__label {
             font-size: 26px;
@@ -130,8 +186,12 @@
 
         &__desc {
             line-height: 176%;
-            margin-top: 66px;
-            margin-bottom: 120px;
+            margin-top: 30px;
+        }
+
+        &__button {
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
     }
 
@@ -139,7 +199,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    .products__wrap {
+    .products {
         padding-top: 127px;
         padding-bottom: 119px;
 
@@ -183,13 +243,21 @@
             padding-top: 163px;
         }
 
+        &__dot {
+            margin-top: 32px;
+        }
+
         &__desc {
             font-size: 16px;
             line-height: 176%;
-            margin-top: 70px;
-            margin-bottom: 152px;
+            margin-top: 30px;
             margin-left: 45px;
             margin-right: 45px;
+        }
+
+        &__button {
+            margin-top: 62px;
+            margin-bottom: 50px;
         }
     }
 }
