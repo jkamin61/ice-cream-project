@@ -1,14 +1,14 @@
-* {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-}
-
 body {
   max-width: 480px;
   color: getColor('text');
   font-family: 'DM Sans', 'Titan One', sans-serif;
   margin: auto; 
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
