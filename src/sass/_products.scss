@@ -91,12 +91,12 @@
         padding-top: 161px;
     }
 
-    &__dot {
+    &-dot {
         display: inline-flex;
         gap: 4px;
         margin-top: 30px;
 
-        &--item {
+        &__item {
             height: 6px;
             width: 6px;
             background-color: getColor("basic-color");
