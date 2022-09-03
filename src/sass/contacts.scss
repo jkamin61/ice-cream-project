@@ -1,0 +1,85 @@
+.contacts {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 22px;
+letter-spacing: 1.8;
+text-align: left;
+
+  &__title {
+    display: none;
+  }
+
+  &__item{
+    width: 220px;
+    height: 100%;
+    padding: 43px 20px;
+    margin: 20px 30px;
+    background: #FFFFFF;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    color: #FFFFFF;
+margin-bottom: 25px;
+
+    &--cafe{
+        width: 80px;
+        
+        background: #F0D1A5;
+border-radius: 4px; 
+    }
+
+    &--truck{
+        width: 130px;
+        background: #C2E297;
+border-radius: 4px;
+    }
+  }
+
+  &__city {
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  &__description {
+    width: 179px;
+height: 36px;
+    line-height: 18px;
+    color: #907e82;
+  }
+
+  &__time{
+    color: #FFA5BA;
+  }
+
+  &__underline{
+    display: block;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #999;
+  }
+
+  &__tel{
+    line-height: 18px;
+    color: #907E82;
+    text-decoration: none;
+  }
+
+  &__mail{
+    line-height: 18px;
+    color: #907E82;
+    text-decoration: none;
+  }
+}
