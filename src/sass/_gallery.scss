@@ -1,0 +1,49 @@
+.gallery {
+  background-color: getColor('background');
+  height: 145px;
+  padding-top: 97px;
+  margin-bottom: 128px;
+  &__bg-img {
+    height: 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/mobile/gallerybg.webp);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      &__container {
+        background-image: url(../images/mobile/gallerybg@2x.webp);
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin-bottom: 279px;
+    height: 246px;
+    padding-top: 140px;
+    &__bg-img {
+      height: 264px;
+      background-image: url(../images/tablet/gallerybg.webp);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        &__container {
+          background-image: url(../images/tablet/gallerybg@2x.webp);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery {
+    margin-bottom: 382px;
+    height: 310px;
+    padding-top: 139px;
+    &__bg-img {
+      height: 430px;
+      background-image: url(../images/desktop/gallerybg.webp);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        &__container {
+          background-image: url(../images/desktop/gallerybg@2x.webp);
+        }
+      }
+    }
+  }
+}
