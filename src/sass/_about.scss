@@ -1,0 +1,82 @@
+.about {
+  background-color: getColor('background');
+  
+
+}
+.about__text-sec {
+   background-image: url(../images/mobile/advantagesbg.webp);
+   background-repeat: no-repeat;
+   background-position: 0% 68%;
+  padding-bottom: 39px;
+
+}
+.about__primary-title {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1, 17;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('title-helper');
+  padding-top: 125px;
+  margin-bottom: 15px;
+}
+.about__secondary-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('button-color'); 
+
+ 
+}
+.about__first-paragraph {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: getColor('text');
+  margin: auto;
+  width: 220px;
+}
+
+.about__secondary-paragraph {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  width: 220px;
+  margin: auto;
+  margin-top: 47px; 
+
+  
+}
+
+.about__button {
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  color: #d41443;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: auto;
+  margin-top: 17px;    
+ 
+}
