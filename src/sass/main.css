@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    margin: auto;
+  }
   * {
     box-sizing: border-box;
     padding: 0px;
@@ -11,7 +14,6 @@
     position: relative;
     color: #000000;
     font-family: "DM Sans", "Titan One", sans-serif;
-    margin: auto;
   }
   .container {
     margin: auto;
