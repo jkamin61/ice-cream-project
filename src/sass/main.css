@@ -1,8 +1,9 @@
 @charset "UTF-8";
+body {
+  margin: auto;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  body {
-    margin: auto;
-  }
   * {
     box-sizing: border-box;
     padding: 0px;
