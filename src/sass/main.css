@@ -1,27 +1,29 @@
 @charset "UTF-8";
-body {
-  position: relative;
-  max-width: 480px;
-  color: #000000;
-  font-family: 'DM Sans', 'Titan One', sans-serif;
-  margin: auto;
-}
-
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
 
-.container {
-  margin: auto;
-  align-items: center;
-  padding: 0px 20px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    min-width: 320px;
+    max-width: 767px;
+    position: relative;
+    color: #000000;
+    font-family: "DM Sans", "Titan One", sans-serif;
+    margin: auto;
+  }
+  .container {
+    margin: auto;
+    align-items: center;
+    padding: 0px 20px;
+  }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   body {
-    max-width: 768px;
+    min-width: 768px;
+    max-width: 1279px;
   }
   .container {
     padding: 0px 36px;
@@ -134,6 +136,7 @@ h1 {
   height: 344px;
   width: 346px;
   border-radius: 50%;
+  overflow: hidden;
   position: absolute;
   top: 16.53%;
   left: 11.25%;
@@ -471,13 +474,13 @@ h1 {
   margin-top: 130px;
 }
 .products__label {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-size: 18px;
   line-height: 1.16;
   color: #ffa5ba;
 }
 .products__title {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -525,7 +528,7 @@ h1 {
   background-color: #c2e297;
 }
 .product__name {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.04em;
@@ -544,13 +547,12 @@ h1 {
   border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-dot__item:hover,
-.product-dot__item:focus-within {
+.product-dot__item:hover, .product-dot__item:focus-within {
   cursor: pointer;
   transform: scale(1.5);
 }
 .product__desc {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
@@ -582,7 +584,7 @@ h1 {
   transform: scale(1.5);
 }
 .product__button:after {
-  content: '➜';
+  content: "➜";
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -683,7 +685,7 @@ h1 {
 }
 
 .about__primary-title {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-size: 18px;
   line-height: 1, 17;
   font-style: normal;
@@ -696,7 +698,7 @@ h1 {
 }
 
 .about__secondary-title {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -716,7 +718,7 @@ h1 {
 }
 
 .about__first-paragraph {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -727,7 +729,7 @@ h1 {
 }
 
 .about__secondary-paragraph {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -848,10 +850,7 @@ h1 {
   background-repeat: no-repeat;
   background-image: url(../images/mobile/gallerybg.webp);
 }
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .gallery__bg-img__container {
     background-image: url(../images/mobile/gallerybg@2x.webp);
   }
@@ -868,10 +867,7 @@ h1 {
     background-image: url(../images/tablet/gallerybg.webp);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .gallery__bg-img__container {
     background-image: url(../images/tablet/gallerybg@2x.webp);
   }
@@ -887,10 +883,7 @@ h1 {
     background-image: url(../images/desktop/gallerybg.webp);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .gallery__bg-img__container {
     background-image: url(../images/desktop/gallerybg@2x.webp);
   }
@@ -957,7 +950,7 @@ h1 {
 }
 .contacts__underline {
   display: block;
-  width: 100;
+  width: 100 .contacts__underline;
   padding-top: 25px;
   margin-bottom: 25px;
   border-bottom: 1px solid #999;
@@ -985,7 +978,7 @@ h1 {
   border-radius: 22px;
   border: 0;
   cursor: pointer;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1000,7 +993,7 @@ h1 {
   padding-right: 15px;
 }
 .pushbutton__red::after {
-  content: '';
+  content: "";
   display: block;
   width: 8px;
   height: 8px;
@@ -1018,7 +1011,7 @@ h1 {
   background: #fff;
 }
 .pushbutton__white::after {
-  content: '';
+  content: "";
   display: block;
   width: 8px;
   height: 8px;
@@ -1076,7 +1069,7 @@ h1 {
     position: relative;
   }
   .pushbutton__red::after {
-    content: '';
+    content: "";
     display: block;
     width: 8px;
     height: 8px;
@@ -1092,7 +1085,7 @@ h1 {
     position: relative;
   }
   .pushbutton__white::after {
-    content: '';
+    content: "";
     display: block;
     width: 8px;
     height: 8px;
@@ -1149,7 +1142,7 @@ h1 {
     position: relative;
   }
   .pushbutton__red::after {
-    content: '';
+    content: "";
     display: block;
     width: 8px;
     height: 8px;
@@ -1165,7 +1158,7 @@ h1 {
     position: relative;
   }
   .pushbutton__white::after {
-    content: '';
+    content: "";
     display: block;
     width: 8px;
     height: 8px;
@@ -1176,4 +1169,4 @@ h1 {
     bottom: 17px;
     rotate: 45deg;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
