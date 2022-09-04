@@ -6,8 +6,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   body {
+    min-width: 320px;
+    max-width: 767px;
     position: relative;
-    max-width: 480px;
     color: getColor('text');
     font-family: 'DM Sans', 'Titan One', sans-serif;
     margin: auto;
@@ -21,7 +22,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   body {
-    max-width: 768px;
+    min-width: 768px;
+    max-width: 1279px;
   }
   .container {
     padding: 0px 36px;
