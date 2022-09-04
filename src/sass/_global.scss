@@ -1,25 +1,26 @@
 body {
   margin: auto;
+  position: relative;
+  color: getColor('text');
+  font-family: 'DM Sans', 'Titan One', sans-serif;
+}
+
+.container {
+  margin: auto;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-  }
-
   body {
     min-width: 320px;
     max-width: 767px;
-    position: relative;
-    color: getColor('text');
-    font-family: 'DM Sans', 'Titan One', sans-serif;
-  }
-  .container {
-    margin: auto;
-    align-items: center;
-    padding: 0px 20px;
   }
 }
 
