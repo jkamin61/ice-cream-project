@@ -6,8 +6,8 @@
   list-style-type: none;
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
-  letter-spacing: 1.8;
+  line-height: 1.8;
+  
   text-align: left;
   padding-top: 86px;
 
@@ -16,7 +16,7 @@
   }
 
   &__item {
-    width: 100%;
+    
     max-width: 220px;
     display: flex;
     flex-direction: column;
@@ -55,8 +55,8 @@
   }
 
   &__description {
-    width: 179px;
-    line-height: 18px;
+    
+    line-height: 1.5;
     color: getColor('information');
   }
 
@@ -76,13 +76,13 @@
   }
 
   &__tel {
-    line-height: 18px;
+    line-height: 1.5;
     color: getColor('information');
     text-decoration: none;
   }
 
   &__mail {
-    line-height: 18px;
+    line-height: 1.5;
     color: getColor('information');
     text-decoration: none;
   }
@@ -106,13 +106,13 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.3;
 
   &__red {
 width: 161px;
     margin-bottom: 10px;
-    color: #fff;
-    background: #d41342;
+    color: getColor('basic-color');
+    background: getColor('button-color');
     position: relative;
     padding-right: 15px;
     &::after {
@@ -134,8 +134,8 @@ width: 161px;
   &__white {
     position: relative;
     width: 161px;
-    color: #d41342;
-    background: #fff;
+    color: getColor('button-color');
+    background: getColor('basic-color');
     &::after {
       content: '';
       display: block;
@@ -158,24 +158,33 @@ width: 161px;
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.8;
     flex-direction: row;
 
     &__item {
       width: 100%;
       max-width: 220px;
       margin: 0 10px;
+
+      &--margin-left{
+        margin-left: 0;
+      }
+
+      &--margin-right{
+        margin-right: 0;
+      }
     }
 
     &__description {
+      
       width: 100%;
       max-width: 145px;
-      line-height: 29px;
+      line-height: 1.6;
     }
     &__header {
       height: 28px;
       font-size: 16px;
-      line-height: 30px;
+      line-height: 1.9;
     }
     &__button {
       flex-direction: row;
@@ -185,10 +194,10 @@ width: 161px;
     }
 
     &__tel {
-      line-height: 26px;
+      line-height: 1.8;
     }
     &__mail {
-      line-height: 26px;
+      line-height: 1.8;
     }
   }
   .pushbutton {
@@ -243,32 +252,41 @@ width: 161px;
 }
 
 /* DESKTOP*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts {
     flex-direction: row;
     justify-content: center;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
 
     &__item {
-      width: calc(100vw - 20px);
+      width: 100%;
+      max-width: 330px;
       margin: 10px 15px;
+
+      &--margin-left{
+        margin-left: 0;
+      }
+
+      &--margin-right{
+        margin-right: 0;
+      }
     }
     &__header {
       height: 28px;
       font-size: 16px;
-      line-height: 30px;
+      line-height: 1.9;
     }
     &__description {
       width: 100%;
       max-width: 243px;
-      line-height: 29px;
+      line-height: 1.9;
     }
     &__tel {
-      line-height: 29px;
+      line-height: 1.9;
     }
     &__mail {
-      line-height: 29px;
+      line-height: 1.9;
     }
     &__button {
       flex-direction: row;
