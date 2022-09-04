@@ -1086,8 +1086,7 @@ ul {
   list-style-type: none;
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
-  letter-spacing: 1.8;
+  line-height: 1.8;
   text-align: left;
   padding-top: 86px;
   width: 100%;
@@ -1096,7 +1095,6 @@ ul {
   display: none;
 }
 .contacts__item {
-  width: 100%;
   max-width: 220px;
   display: flex;
   flex-direction: column;
@@ -1130,8 +1128,7 @@ ul {
   color: #000000;
 }
 .contacts__description {
-  width: 179px;
-  line-height: 18px;
+  line-height: 1.5;
   color: #907e82;
 }
 .contacts__day {
@@ -1148,12 +1145,12 @@ ul {
   border-bottom: 1px solid #999;
 }
 .contacts__tel {
-  line-height: 18px;
+  line-height: 1.5;
   color: #907e82;
   text-decoration: none;
 }
 .contacts__mail {
-  line-height: 18px;
+  line-height: 1.5;
   color: #907e82;
   text-decoration: none;
 }
@@ -1174,13 +1171,13 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.3;
 }
 .pushbutton__red {
   width: 161px;
   margin-bottom: 10px;
-  color: #fff;
-  background: #d41342;
+  color: #ffffff;
+  background: #d41443;
   position: relative;
   padding-right: 15px;
 }
@@ -1199,8 +1196,8 @@ ul {
 .pushbutton__white {
   position: relative;
   width: 161px;
-  color: #d41342;
-  background: #fff;
+  color: #d41443;
+  background: #ffffff;
 }
 .pushbutton__white::after {
   content: "";
@@ -1219,7 +1216,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.8;
     flex-direction: row;
   }
   .contacts__item {
@@ -1227,15 +1224,21 @@ ul {
     max-width: 220px;
     margin: 0 10px;
   }
+  .contacts__item--margin-left {
+    margin-left: 0;
+  }
+  .contacts__item--margin-right {
+    margin-right: 0;
+  }
   .contacts__description {
     width: 100%;
     max-width: 145px;
-    line-height: 29px;
+    line-height: 1.6;
   }
   .contacts__header {
     height: 28px;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
   }
   .contacts__button {
     flex-direction: row;
@@ -1244,10 +1247,10 @@ ul {
     margin-top: 81px;
   }
   .contacts__tel {
-    line-height: 26px;
+    line-height: 1.8;
   }
   .contacts__mail {
-    line-height: 26px;
+    line-height: 1.8;
   }
   .pushbutton {
     height: 44px;
@@ -1290,32 +1293,39 @@ ul {
   }
 }
 /* DESKTOP*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts {
     flex-direction: row;
     justify-content: center;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
   }
   .contacts__item {
-    width: calc(100vw - 20px);
+    width: 100%;
+    max-width: 330px;
     margin: 10px 15px;
+  }
+  .contacts__item--margin-left {
+    margin-left: 0;
+  }
+  .contacts__item--margin-right {
+    margin-right: 0;
   }
   .contacts__header {
     height: 28px;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
   }
   .contacts__description {
     width: 100%;
     max-width: 243px;
-    line-height: 29px;
+    line-height: 1.9;
   }
   .contacts__tel {
-    line-height: 29px;
+    line-height: 1.9;
   }
   .contacts__mail {
-    line-height: 29px;
+    line-height: 1.9;
   }
   .contacts__button {
     flex-direction: row;
