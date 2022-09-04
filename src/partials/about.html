@@ -1,24 +1,44 @@
-<section class="about">
+<section id="made" class="about">
   <h3 class="about__primary-title">Tradition and love</h3>
   <h2 class="about__secondary-title">How it's made?</h2>
-  <div class="about__pic-sec">
-    <img alt="Picture of a cow with milk" src="" />
-  </div>
-  <div class="about__text-sec">
-    <p class="about__first-paragraph">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-      eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-    </p>
+  <div class="about__two-sections">
+    <div class="about__pic-sec">
+      <picture>
+        <source
+          srcset="./images/tablet/cow.webp 1x, ./images/tablet/cow@2x.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/desktop/cow.webp 1x, ./images/desktop/cow@2x.webp 2x"
+          media="(min-width: 1200px)"
+        />
+        <img class="about__pic"
+          alt="Picture of a coow with milk"
+          src="./images/mobile/cow.webp"
+          srcset="./images/mobile/cow@2x.webp 2x"
+        />
+      </picture>
+    </div>
+    <div class="about__text-sec">
+      <p class="about__first-paragraph">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+      </p>
 
-    <p class="about__secondary-paragraph">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-      imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-      Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-    </p>
+      <p id="about" class="about__secondary-paragraph">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh,<br class="about__space" />
+        tincidunt.<br />
+        <br />Aliquam erat volutpat. Aenean accumsan.
+      </p>
 
-    <button type="button" class="about__button">
-      Read more
-      <svg></svg>
-    </button>
+      <button type="button" class="about__button">
+        Read more
+        <svg width="4.43" height="8">
+        <use href="./images/icons.svg#icon-Vector-1"></use>
+      </svg>
+      </button>
+    </div>
   </div>
 </section>

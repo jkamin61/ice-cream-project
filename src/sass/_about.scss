@@ -1,0 +1,162 @@
+.about {
+  background-color: getColor('background');
+}
+.about__text-sec {
+  background-image: url(../images/mobile/advantagesbg.webp);
+  background-repeat: no-repeat;
+  background-position: 0% 68%;
+  padding-bottom: 39px;
+}
+.about__primary-title {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1, 17;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('title-helper');
+  padding-top: 125px;
+  margin-bottom: 15px;
+}
+.about__secondary-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('button-color');
+  width: 200px;
+  margin: auto;
+  margin-bottom: 26px;
+}
+.about__pic {
+  display: block;
+  margin: auto;
+  margin-bottom: 46px;
+}
+.about__first-paragraph {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: getColor('text');
+  margin: auto;
+  width: 220px;
+}
+
+.about__secondary-paragraph {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: getColor('information');
+  width: 220px;
+  margin: auto;
+  margin-top: 47px;
+}
+
+.about__button {
+  width: 176px;
+  height: 44px;
+  background: getColor('basic-color');
+  border-radius: 22px;
+  border: none;
+  color: getColor('button-color');
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 13.62px;
+  align-items: center;
+  padding: 0;
+  margin: auto;
+  margin-top: 17px;
+
+  &:hover {
+    background-color: getColor('button-hover');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__primary-title {
+    font-size: 26px;
+    line-height: 1, 5;
+    padding-top: 130px;
+    margin-bottom: 16px;
+  }
+  .about__secondary-title {
+    font-size: 48px;
+    line-height: 1, 2;
+    width: 429px;
+  }
+
+  .about__first-paragraph {
+    font-size: 14px;
+    line-height: 176%;
+    width: 340px;
+    margin-top: 100px;
+  }
+  .about__secondary-paragraph {
+    font-size: 14px;
+    line-height: 176%;
+    width: 340px;
+    margin-bottom: 62pxF;
+  }
+  .about__two-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+  }
+  .about__space {
+    display: none;
+  }
+  .about__text-sec {
+    background-image: none;
+  }
+  .about__button {
+    margin-top: 62px;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__primary-title {
+    font-size: 30px;
+    line-height: 1, 4;
+    padding-top: 125px;
+  }
+  .about__secondary-title {
+    font-size: 58px;
+    line-height: 1, 14;
+    width: 534px;
+  }
+  .about__first-paragraph {
+    font-size: 16px;
+    width: 463px;
+  }
+  .about__secondary-paragraph {
+    width: 463px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+  }
+  .about__pic {
+    width: 516px;
+  }
+  .about__two-sections {
+    gap: 70px;
+    background-image: url(../images/desktop/advantagesbg.webp);
+    background-repeat: no-repeat;
+    background-position: 0% 400%;
+  }
+  .about__button {
+    margin-top: 45px;
+    text-align: start;
+  }
+}

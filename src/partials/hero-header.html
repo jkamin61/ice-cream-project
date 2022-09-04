@@ -1,0 +1,127 @@
+<header id="home" class="container header">
+  <div class="header__top">
+    <a href="index.html"
+      ><figure class="header__logo">
+        <img
+          src="./images/mobile/logo.webp"
+          alt="IceCream logo"
+          srcset="./images/desktop/logo@2x.webp 2x"
+        /></figure
+    ></a>
+
+    <ul class="header__nav">
+      <li><a href="#home" class="header__nav-item header__nav--home">Home</a></li>
+      <li><a href="#about" class="header__nav-item">About us</a></li>
+      <li><a href="#made" class="header__nav-item">How it's made?</a></li>
+      <li><a href="#products" class="header__nav-item">Our products</a></li>
+      <li><a href="#contact" class="header__nav-item">Contact</a></li>
+    </ul>
+
+    <!-- <div class="mobile-menu-container">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div> -->
+    <div
+      class="header__menu-mbl menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="20" height="12" class="menu-toggle__icon--open">
+        <use href="./images/icons.svg#icon-Burger"></use>
+      </svg>
+    </div>
+
+    <button type="button" class="header__btn">
+      <span>Buy now</span
+      ><svg>
+        <use href="./images/icons.svg#icon-Vector-1"></use>
+      </svg>
+    </button>
+  </div>
+  <h1>ice cream made with <span class="header__passion">passion</span></h1>
+  <div>
+    <div>
+      <a href="#products"> <button type="button" class="header__prodts-btn">Products</button></a>
+
+      <a href="#made"> <button type="menu" class="header__made-btn">How it's made?</button></a>
+    </div>
+
+    <figure class="header__pic-ice">
+      <picture
+        ><source
+          srcset="./images/mobile/heropic3.webp 1x, ./images/mobile/heropic3@2x.webp 2x"
+          media="(max-width:767px)" />
+        <source
+          srcset="./images/tablet/heropic3.webp 1x, ./images/tablet/heropic3@2x.webp 2x"
+          media="(max-width:1279px)" />
+        <source
+          srcset="./images/desktop/heropic3.webp 1x, ./images/desktop/heropic3@2x.webp 2x"
+          media="(min-width:1280px)" />
+        <img src="./images/mobile/heropic3.webp" alt="Icecream"
+      /></picture>
+    </figure>
+
+    <div class="header__cafes">
+      <span class="header__cafes-nr">16</span>
+      <span class="header__cafes-facility">cafes</span>
+    </div>
+    <div class="header__trucks">
+      <span class="header__trucks-nr">23</span>
+      <span class="header__trucks-facility">food trucks</span>
+    </div>
+
+    <figure class="header__pic-milk">
+      <picture>
+        <source
+          srcset="./images/tablet/heropic2.webp 1x, ./images/tablet/heropic2@2x.webp 2x"
+          media="(max-width:1279px)" />
+        <source
+          srcset="./images/desktop/heropic2.webp 1x, ./images/desktop/heropic2@2x.webp 2x"
+          media="(min-width:1280px)" />
+        <img src="./images/tablet/heropic2.webp" alt="jug of milk"
+      /></picture>
+    </figure>
+
+    <p class="header__lorem">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
+    <a href="">
+      <figure class="header__arrow">
+        <img
+          src="./images/desktop/arrowhero.webp"
+          alt="arrow"
+          srcset="./images/desktop/arrowhero@2x.webp 2x"
+        /></figure
+    ></a>
+
+    <figure class="header__pic-tasty">
+      <picture>
+        <source
+          srcset="./images/tablet/heropic1.webp 1x, ./images/tablet/heropic1@2x.webp 2x"
+          media="(max-width:1279px)" />
+        <source
+          srcset="./images/desktop/heropic1.webp 1x, ./images/desktop/heropic1@2x.webp 2x"
+          media="(min-width:1280px)" />
+        <img src="./images/tablet/heropic1.webp" alt="Women licking icecreams"
+      /></picture>
+    </figure>
+  </div>
+</header>

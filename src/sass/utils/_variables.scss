@@ -1,0 +1,24 @@
+$colors: (
+  'main-color': #ffb8ca,
+  'secound-main': #f0d1a5,
+  'third-main': #c2e297,
+  'basic-color': #ffffff,
+  'mobile-menu': #e17992,
+  'title-color': #d41443,
+  'title-helper': #ffa5ba,
+  'button-color': #d41443,
+  'button-hover': #ecebeb,
+  'second-hover': #c7133e,
+  'media-hover': #d41443,
+  'background': #fff5f6,
+  'repeating-color': #e1e1e1,
+  'review': #fafafa,
+  'text': #000000,
+  'information': #907e82,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+// aby użyć koloru w projecie wpisujemy w sekcji np background-color: getColor("main-color");
