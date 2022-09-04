@@ -1,0 +1,417 @@
+ul {
+  list-style: none;
+}
+h1 {
+  position: relative;
+  width: 218px;
+  padding: 0;
+  font-family: Titan One;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  color: getColor('basic-color');
+  z-index: 2;
+  margin-bottom: 19px;
+  margin-top: 137px;
+}
+.header {
+  padding-top: 6px;
+  padding-left: 20px;
+  background-color: getColor('main-color');
+  height: 502px;
+  width: 100%;
+  position: relative;
+  &__menu-mbl {
+    z-index: 4;
+    cursor: pointer;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: none;
+  }
+  &__passion {
+    font-family: Titan One;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: 0em;
+    text-align: left;
+    color: getColor('media-hover');
+  }
+  &__nav {
+    display: none;
+  }
+  &__prodts-btn {
+    border: none;
+    height: 24px;
+    width: 62.4px;
+    margin-right: 8px;
+
+    border-radius: 20px;
+    font-family: DM Sans;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    text-align: center;
+    color: getColor('basic-color');
+    background-color: getColor('media-hover');
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    &:hover {
+      background-color: #c7133e;
+    }
+  }
+  &__made-btn {
+    border: none;
+    height: 24px;
+    width: 82.8px;
+
+    border-radius: 20px;
+    font-family: DM Sans;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    text-align: center;
+    color: getColor('button-color');
+    background-color: getColor('basic-color');
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    &:hover {
+      background-color: getColor('button-hover');
+    }
+  }
+  &__pic-ice {
+    background-color: getColor('title-helper');
+    height: 344px;
+    width: 346px;
+    border-radius: 50%;
+    position: absolute;
+    top: 16.53%;
+    left: 11.25%;
+    z-index: 1;
+    & img {
+      top: 2.616%;
+      left: 23.41%;
+      position: absolute;
+    }
+  }
+  &__cafes {
+    display: none;
+  }
+  &__trucks {
+    display: none;
+  }
+  &__pic-milk {
+    display: none;
+  }
+  &__lorem {
+    display: none;
+  }
+  &__arrow {
+    display: none;
+  }
+  &__pic-tasty {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    width: 162px;
+    font-size: 22px;
+    line-height: 1.13;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .header {
+    padding-top: 31px;
+    padding-left: 38px;
+    height: 399px;
+    &__menu-mbl {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+    &__passion {
+      font-size: 34px;
+      line-height: 0.91;
+    }
+    &__btn {
+      display: flex;
+      gap: 12px;
+      width: 160px;
+      height: 44px;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      border-radius: 22px;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.31;
+      letter-spacing: 0em;
+      text-align: center;
+      background-color: getColor('basic-color');
+      color: getColor('media-hover');
+      cursor: pointer;
+      & svg {
+        width: 8px;
+      }
+      &:hover {
+        background-color: getColor('button-hover');
+      }
+    }
+    &__pic-ice {
+      height: 322px;
+      width: 324px;
+      border-radius: 50%;
+      position: absolute;
+      top: 7.77%;
+      left: 39.97%;
+      z-index: 1;
+      & img {
+        top: 9.94%;
+        left: 21.91%;
+        position: absolute;
+      }
+    }
+    &__cafes {
+      display: revert;
+      background-color: getColor('basic-color');
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 23.56%;
+      left: 93.49%;
+      &-nr {
+        font-family: Titan One;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        color: getColor('media-hover');
+        position: absolute;
+        top: 4px;
+        left: -25px;
+      }
+      &-facility {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0em;
+        color: getColor('basic-color');
+        position: absolute;
+        top: 34px;
+        left: -15px;
+      }
+    }
+    &__trucks {
+      display: revert;
+      background-color: getColor('basic-color');
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 37.84%;
+      left: 93.49%;
+      &-nr {
+        font-family: Titan One;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        color: getColor('media-hover');
+        position: absolute;
+        top: 4px;
+        left: -25px;
+      }
+      &-facility {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0em;
+        color: getColor('basic-color');
+        position: absolute;
+        top: 34px;
+        left: -33px;
+        width: 44px;
+      }
+    }
+
+    &__pic-milk {
+      position: absolute;
+      display: revert;
+      left: 4.43%;
+      top: 61.41%;
+    }
+    &__lorem {
+      width: 114px;
+      height: 48px;
+      position: absolute;
+      display: revert;
+      font-family: DM Sans;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0em;
+      text-align: left;
+      color: getColor('basic-color');
+      left: 20%;
+      top: 73.18%;
+    }
+    &__arrow {
+      position: absolute;
+      display: revert;
+      left: 20%;
+      top: 86.97%;
+    }
+    &__pic-tasty {
+      position: absolute;
+      display: revert;
+      left: 73.7%;
+      top: 66.67%;
+      z-index: 3;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    h1 {
+      width: 277px;
+      font-size: 37px;
+      line-height: 1.145;
+      margin-top: 84px;
+      margin-left: 69px;
+      margin-bottom: 25px;
+    }
+    .header {
+      padding-top: 37px;
+      padding-left: 46px;
+      height: 665px;
+      &__passion {
+        font-size: 58px;
+        line-height: 0.91;
+      }
+      &__top {
+        justify-content: space-between;
+      }
+      &__nav {
+        display: flex;
+        gap: 35px;
+        z-index: 2;
+        &-item {
+          text-decoration: none;
+          font-family: DM Sans;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.31;
+          letter-spacing: 0em;
+          text-align: left;
+          color: getColor('basic-color');
+        }
+        &--home {
+          color: getColor('media-hover');
+        }
+      }
+      &__menu-mbl {
+        display: none;
+      }
+      &__prodts-btn {
+        height: 40px;
+        width: 104px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: 0em;
+        margin-left: 69px;
+      }
+      &__made-btn {
+        height: 40px;
+        width: 138px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: 0em;
+      }
+      &__pic-ice {
+        height: 538px;
+        width: 538px;
+        border-radius: 50%;
+        position: absolute;
+        top: 7.82%;
+        left: 37.11%;
+        z-index: 1;
+        & img {
+          top: 10.41%;
+          left: 22.12%;
+          position: absolute;
+        }
+      }
+      &__cafes {
+        height: 30px;
+        width: 30px;
+        top: 23.45%;
+        left: 90.08%;
+        &-nr {
+          font-size: 46px;
+          top: 4px;
+          left: -40px;
+        }
+        &-facility {
+          font-size: 14px;
+          line-height: 1.3;
+          top: 55px;
+          left: -25px;
+        }
+      }
+      &__trucks {
+        height: 30px;
+        width: 30px;
+        top: 37.29%;
+        left: 90.08%;
+        &-nr {
+          font-size: 46px;
+          top: 4px;
+          left: -40px;
+        }
+        &-facility {
+          font-size: 14px;
+          line-height: 1.3;
+          top: 55px;
+          left: -58px;
+          width: 77px;
+        }
+      }
+      &__pic-milk {
+        left: 6.01%;
+        top: 64.51%;
+      }
+      &__lorem {
+        width: 200px;
+        height: 78px;
+        font-size: 14px;
+        line-height: 1.4;
+        left: 23.04%;
+        top: 72.93%;
+      }
+      &__arrow {
+        left: 23.04%;
+        top: 87.67%;
+      }
+      &__pic-tasty {
+        left: 68.59%;
+        top: 65.11%;
+      }
+    }
+  }
+}

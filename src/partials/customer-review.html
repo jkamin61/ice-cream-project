@@ -1,5 +1,4 @@
 <div class="customer-reviews container">
-  <!-- Tutaj sekcja z opinią, avatarem (JPG) i svg od cytatu - wymaga podpięcia JavaScript, ale to potem -->
   <div class="customer-reviews__review">
     <div class="customer-reviews__block">
       <picture class="customer-reviews__avatar-picture">
@@ -22,57 +21,55 @@
         />
       </picture>
       <!-- ::before svg-->
-      <svg width="54" height="40" class="customer-reviews__svg-quote">
-        <use href="./images/icons.svg#icon-Quote"></use>
-        <use href="./images/icons.svg#icon-quote"></use>
-      </svg>
-      <svg width="54" height="40" class="customer-reviews__svg-quote">
-        <use href="./images/icons.svg#icon-Quote"></use>
-      </svg>
-      <!-- treść opinii -->
-      <q class="customer-reviews__opinion">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-      </q>
+
+      <div class="customer-reviews__quote container">
+        <div class="customer-reviews__opinion-block">
+          <p class="customer-reviews__opinion">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+      </div>
     </div>
-    sekcja z trzema kropkami svg, imie+lokalizacja oraz listą z domkiem i dotami-->
-    <section class="customer-reviews__svg-block">
+
+    <section class="customer-reviews__svg-block container">
+
       <ul class="customer-reviews__svg-list">
         <li class="customer-reviews__svg-item">
           <svg width="4" height="4" class="customer-reviews__svg-dot">
-            <use href="./images/icons.svg#icon-Ellipse-7"></use>
+            <use href="./images/icons.svg#icon-dot"></use>
           </svg>
         </li>
 
         <li class="customer-reviews__svg-item">
-          <svg class="customer-reviews__svg-dot">
-            <use href="./images/icons.svg#icon-Ellipse-7"></use>
+          <svg width="4" height="4" class="customer-reviews__svg-dot">
+            <use href="./images/icons.svg#icon-dot"></use>
           </svg>
         </li>
 
         <li class="customer-reviews__svg-item">
-          <svg class="customer-reviews__svg-dot">
-            <use href="./images/icons.svg#icon-Ellipse-7"></use>
+          <svg width="4" height="4" class="customer-reviews__svg-dot">
+            <use href="./images/icons.svg#icon-dot"></use>
           </svg>
         </li>
       </ul>
-      <div class="customer-reviews__name-div">
+      <div class="customer-reviews__name-div container">
         <h2 class="customer-reviews__name">Emily, Los Angeles</h2>
       </div>
-      <div class="customer-reviews__slide-block">
+      <div class="customer-reviews__slide-block container">
         <ul class="customer-reviews__second-list">
           <li class="customer-reviews__second-list-item">
-            <svg width="13" height="12" class="customer-reviews__second-svg">
+            <svg width="12.4" height="11.84" class="customer-reviews__second-svg">
               <use href="./images/icons.svg#icon-Home"></use>
             </svg>
           </li>
           <li class="customer-reviews__second-list-item">
-            <svg class="customer-reviews__second-svg">
+            <svg width="12" height="12" class="customer-reviews__second-svg">
               <use href="./images/icons.svg#icon-Ellipse-7"></use>
             </svg>
           </li>
           <li class="customer-reviews__second-list-item">
-            <svg class="customer-reviews__second-svg">
+            <svg width="12" height="12" class="customer-reviews__second-svg">
               <use href="./images/icons.svg#icon-Ellipse-7"></use>
             </svg>
           </li>

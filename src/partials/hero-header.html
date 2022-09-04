@@ -1,27 +1,23 @@
 <header id="home" class="container header">
-  <div>
-    <ul>
-      <li>
-        <a href="index.html"
-          ><figure class="header__logo">
-            <img
-              src="./images/mobile/logo.webp"
-              alt="IceCream logo"
-              srcset="./images/desktop/logo@2x.webp 2x"
-            /></figure
-        ></a>
-      </li>
-      <li>
-        <ul>
-          <li><a href="#home" class="header__nav header_nav--home">Home</a></li>
-          <li><a href="#about" class="header__nav">About us</a></li>
-          <li><a href="#made" class="header__nav">How it's made?</a></li>
-          <li><a href="#products" class="header__nav">Our products</a></li>
-          <li><a href="#contact" class="header__nav">Contact</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="mobile-menu-container">
+  <div class="header__top">
+    <a href="index.html"
+      ><figure class="header__logo">
+        <img
+          src="./images/mobile/logo.webp"
+          alt="IceCream logo"
+          srcset="./images/desktop/logo@2x.webp 2x"
+        /></figure
+    ></a>
+
+    <ul class="header__nav">
+      <li><a href="#home" class="header__nav-item header__nav--home">Home</a></li>
+      <li><a href="#about" class="header__nav-item">About us</a></li>
+      <li><a href="#made" class="header__nav-item">How it's made?</a></li>
+      <li><a href="#products" class="header__nav-item">Our products</a></li>
+      <li><a href="#contact" class="header__nav-item">Contact</a></li>
+    </ul>
+
+    <!-- <div class="mobile-menu-container">
           <button
             class="menu-toggle js-open-menu"
             aria-expanded="false"
@@ -41,89 +37,91 @@
               ></path>
             </svg>
           </button>
-        </div>
-        <!-- <div class="header__menu-mbl">
-          <svg width="20" height="12">
-            <use href=""></use>
-          </svg>
         </div> -->
-      </li>
-      <li>
-        <button type="button" class="header__btn">
-          Buy now
-          <svg width="4" height="8">
-            <use href=""></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+    <div
+      class="header__menu-mbl menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="20" height="12" class="menu-toggle__icon--open">
+        <use href="./images/icons.svg#icon-Burger"></use>
+      </svg>
+    </div>
+
+    <button type="button" class="header__btn">
+      <span>Buy now</span
+      ><svg>
+        <use href="./images/icons.svg#icon-Vector-1"></use>
+      </svg>
+    </button>
   </div>
   <h1>ice cream made with <span class="header__passion">passion</span></h1>
   <div>
-    <ul>
-      <li>
-        <button type="menu" href="#produkts" class="header__prodts-btn">Products</button>
-      </li>
-      <li>
-        <button type="menu" href="#made" class="header__made-btn">How it's made?</button>
-      </li>
-      <li>
-        <figure class="header__pic-ice">
-          <picture
-            ><source
-              srcset="./images/mobile/heropic3.webp 1x, ./images/mobile/heropic3@2x.webp 2x"
-              media="(max-width:767px)" />
-            <source
-              srcset="./images/tablet/heropic3.webp 1x, ./images/tablet/heropic3@2x.webp 2x"
-              media="(max-width:1279px)" />
-            <source
-              srcset="./images/desktop/heropic3.webp 1x, ./images/desktop/heropic3@2x.webp 2x"
-              media="(min-width:1280px)" />
-            <img src="./images/mobile/heropic3.webp" alt="Icecream"
-          /></picture>
-        </figure>
-      </li>
-      <li><span class="header__nr">16</span><span class="header__facility">cafes</span></li>
-      <li><span class="header__nr">23</span><span class="header__facility">food trucks</span></li>
-      <li>
-        <figure class="header__pic-milk">
-          <picture>
-            <source
-              srcset="./images/tablet/heropic2.webp 1x, ./images/tablet/heropic2@2x.webp 2x"
-              media="(max-width:1279px)" />
-            <source
-              srcset="./images/desktop/heropic2.webp 1x, ./images/desktop/heropic2@2x.webp 2x"
-              media="(min-width:1280px)" />
-            <img src="./images/tablet/heropic2.webp" alt="jug of milk"
-          /></picture>
-        </figure>
-      </li>
-      <li>
-        <p class="header__lorem">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
-        </p>
-        <figure class="header__arrow">
-          <img
-            src="./images/desktop/arrowhero.webp"
-            alt="arrow"
-            srcset="./images/desktop/arrowhero@2x.webp 2x"
-          />
-        </figure>
-      </li>
-      <li>
-        <figure class="header__pic-tasty">
-          <picture>
-            <source
-              srcset="./images/tablet/heropic1.webp 1x, ./images/tablet/heropic1@2x.webp 2x"
-              media="(max-width:1279px)" />
-            <source
-              srcset="./images/desktop/heropic1.webp 1x, ./images/desktop/heropic1@2x.webp 2x"
-              media="(min-width:1280px)" />
-            <img src="./images/tablet/heropic1.webp" alt="Women licking icecreams"
-          /></picture>
-        </figure>
-      </li>
-    </ul>
+    <div>
+      <a href="#products"> <button type="button" class="header__prodts-btn">Products</button></a>
+
+      <a href="#made"> <button type="menu" class="header__made-btn">How it's made?</button></a>
+    </div>
+
+    <figure class="header__pic-ice">
+      <picture
+        ><source
+          srcset="./images/mobile/heropic3.webp 1x, ./images/mobile/heropic3@2x.webp 2x"
+          media="(max-width:767px)" />
+        <source
+          srcset="./images/tablet/heropic3.webp 1x, ./images/tablet/heropic3@2x.webp 2x"
+          media="(max-width:1279px)" />
+        <source
+          srcset="./images/desktop/heropic3.webp 1x, ./images/desktop/heropic3@2x.webp 2x"
+          media="(min-width:1280px)" />
+        <img src="./images/mobile/heropic3.webp" alt="Icecream"
+      /></picture>
+    </figure>
+
+    <div class="header__cafes">
+      <span class="header__cafes-nr">16</span>
+      <span class="header__cafes-facility">cafes</span>
+    </div>
+    <div class="header__trucks">
+      <span class="header__trucks-nr">23</span>
+      <span class="header__trucks-facility">food trucks</span>
+    </div>
+
+    <figure class="header__pic-milk">
+      <picture>
+        <source
+          srcset="./images/tablet/heropic2.webp 1x, ./images/tablet/heropic2@2x.webp 2x"
+          media="(max-width:1279px)" />
+        <source
+          srcset="./images/desktop/heropic2.webp 1x, ./images/desktop/heropic2@2x.webp 2x"
+          media="(min-width:1280px)" />
+        <img src="./images/tablet/heropic2.webp" alt="jug of milk"
+      /></picture>
+    </figure>
+
+    <p class="header__lorem">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
+    <a href="">
+      <figure class="header__arrow">
+        <img
+          src="./images/desktop/arrowhero.webp"
+          alt="arrow"
+          srcset="./images/desktop/arrowhero@2x.webp 2x"
+        /></figure
+    ></a>
+
+    <figure class="header__pic-tasty">
+      <picture>
+        <source
+          srcset="./images/tablet/heropic1.webp 1x, ./images/tablet/heropic1@2x.webp 2x"
+          media="(max-width:1279px)" />
+        <source
+          srcset="./images/desktop/heropic1.webp 1x, ./images/desktop/heropic1@2x.webp 2x"
+          media="(min-width:1280px)" />
+        <img src="./images/tablet/heropic1.webp" alt="Women licking icecreams"
+      /></picture>
+    </figure>
   </div>
 </header>
