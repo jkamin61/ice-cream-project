@@ -126,7 +126,7 @@ h1 {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279) {
   h1 {
     width: 162px;
     font-size: 22px;
@@ -151,7 +151,6 @@ h1 {
       gap: 12px;
       width: 160px;
       height: 44px;
-      margin-right: 34px;
       border: none;
       align-items: center;
       justify-content: center;
