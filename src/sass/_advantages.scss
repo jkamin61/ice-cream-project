@@ -1,4 +1,5 @@
 .advantages {
+  display: flex;
   background-color: getColor('background');
   padding-bottom: 97px;
 
@@ -46,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .advantages {
     padding-bottom: 140px;
     padding-top: 27px;
@@ -75,7 +76,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages {
     padding-bottom: 139px;
     padding-top: 39px;
