@@ -1,0 +1,62 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>
+            <span class="modal__close-btn--icon-box">
+                <svg class="modal__close-btn--icon">
+                    <use href="images/icons.svg#img-x"></use>
+                </svg>
+            </span>
+        </button>
+
+        <form class="modal-form">
+            <div class="modal-form__title">
+                Zostaw swoje dane w formularzu poniżej
+            </div>
+
+            <label for="username" class="modal-form__label">Imię
+                <input type="text" name="username" id="username" required minlength="2" maxlength="20"
+                    class="modal-form__input " />
+                <svg class="modal-form__input--icon">
+                    <use href="images/icons.svg#icon-name"></use>
+                </svg>
+            </label>
+
+            <label class="modal-form__label" for="tel">
+                Telefon
+                <input type="tel" name="phone_number" id="tel" class="modal-form__input " />
+                <svg class="modal-form__input--icon">
+                    <use href="images/icons.svg#icon-phone"></use>
+                </svg>
+            </label>
+
+            <label for="email" class="modal-form__label">
+                Email
+                <input type="email" name="email" id="email" required class="modal-form__input " />
+                <svg class="modal-form__input--icon">
+                    <use href="images/icons.svg#icon-envelope-2"></use>
+                </svg>
+            </label>
+
+            <label for="feedback" class="modal-form__label">
+                Komentarz
+                <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" id="feedback"
+                    class="modal-form__textarea"></textarea>
+
+
+                <div class="modal-form__consent">
+                    <input class="modal-form__consent--checkbox visually-hidden" type="checkbox"
+                        name="modal-form__consent--checkbox" id="modal-form__consent--checkbox" required />
+
+                    <label for="modal-form__consent--checkbox" class="modal-form__consent--text">
+                        Oświadczam iż akceptuję
+                        <a href="" class="modal-form__consent--link">Regulamin</a> i
+                        <a href="" class="modal-form__consent--link">Politykę Prywatności.</a>
+                    </label>
+                </div>
+
+
+                <div class="modal-form__submit">
+                    <button class="modal-form__submit--button">Wyślij</button>
+                </div>
+        </form>
+    </div>
