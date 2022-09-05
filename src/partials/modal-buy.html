@@ -1,50 +1,56 @@
-<section class="modal-buy-now is-hidden" data-modal>
-  <button type="button" class="modal-buy-now__close" data-modal-close>&#10006;</button>
-  <span class="modal-buy-now__title"> Make your order here! </span>
-  <form class="modal-buy-now__container">
-    <label class="modal-buy-now__label">
-      Name
-      <input
-        class="modal-buy-now__input"
-        type="text"
-        name="Username"
-        placeholder="Your name..."
-        required
-      />
-    </label>
-    <label class="modal-buy-now__label">
-      Address
-      <input class="modal-buy-now__input" type="text" name="Address" />
-    </label>
-    <label class="modal-buy-now__label">
-      Email
-      <input
-        class="modal-buy-now__input"
-        type="email"
-        name="Email"
-        required
-        placeholder="youremail@gmail.com"
-      />
-    </label>
-    <label class="modal-buy-now__label" for="dessert">Dessert</label>
-    <select class="modal-buy-now__select" id="dessert" name="country" required>
-      <option value="Ice Cream">Ice Cream</option>
-      <option value="Dessert">Ice Coffee</option>
-      <option value="Milkshake">Milkshake</option>
-    </select>
-
-    <label class="modal-buy-now__label">
-      Subject
-      <textarea
-        class="modal-buy-now__comment"
-        name="comment"
-        placeholder="Wprowadź tekst"
-      ></textarea>
-    </label>
-    <div class="form-button">
-      <button class="form-button__send" type="submit">Send</button>
-    </div>
-  </form>
+<section class="backdrop is-hidden" data-modal>
+  <section class="backdrop__modal-window">
+    <button type="button" class="backdrop__close-modal" data-modal-close>&#10006;</button>
+    <form class="order-form">
+      <section class="order-form__header">
+        <span class="order-form__head"> Zostaw swoje dane w formularzu poniżej </span>
+      </section>
+      <label class="order-form__label">
+        Imię
+        <input class="order-form__input" type="text" name="Username" required />
+        <svg class="order-form__icons" width="12" height="12">
+          <use href="images/icons.svg#name"></use>
+        </svg>
+      </label>
+      <label class="order-form__label">
+        Telefon
+        <input class="order-form__input" type="tel" name="Telephone" />
+        <svg class="order-form__icons" width="14" height="14">
+          <use href="images/icons.svg#telephone"></use>
+        </svg>
+      </label>
+      <label class="order-form__label">
+        Email
+        <input class="order-form__input" type="email" name="Email" required />
+        <svg class="order-form__icons" width="16" height="12">
+          <use href="images/icons.svg#email-contact"></use>
+        </svg>
+      </label>
+      <label class="order-form__label">
+        Komentarz
+        <textarea
+          class="order-form__comment"
+          name="comment"
+          placeholder="Wprowadź tekst"
+        ></textarea>
+      </label>
+      <label class="rules">
+        <input class="rules__input" type="checkbox" name="rules-accept" value="rules" required />
+        <svg class="rules__icon--checked" width="13" height="10">
+          <use href="images/icons.svg#checkbox"></use>
+        </svg>
+        <span>
+          Oświadczam iż akceptuję
+          <a class="rules__link" href="#">Regulamin</a>
+          i
+          <a class="rules__link" href="#">Politykę Prywatności.</a>
+        </span>
+      </label>
+      <div class="form-button">
+        <button class="form-button__send" type="submit">Wyślij</button>
+      </div>
+    </form>
+  </section>
 </section>
 
 <script defer src="js/modal-buy.js"></script>
