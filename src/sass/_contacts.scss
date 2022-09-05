@@ -1,3 +1,13 @@
+.section__contacts{
+  
+  background: linear-gradient(
+    to bottom,
+    #ffffff 12%,
+    #fff5f6 12%,
+    #fff5f6 88%,
+  );
+  
+}
 .contacts {
   display: flex;
   flex-direction: column;
@@ -6,7 +16,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
-  
   text-align: left;
   padding-top: 86px;
   width: 100%;
@@ -16,7 +25,7 @@
   }
 
   &__item {
-    
+    position: relative;
     max-width: 220px;
     display: flex;
     flex-direction: column;
@@ -25,6 +34,7 @@
     background: getColor('basic-color');
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    
   }
 
   &__header {
@@ -106,6 +116,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
+  &:hover{
+    background:getColor('second-hover');
+  }
+  &--bg:hover{
+    background:getColor('button-hover');
+  }
 
   &__red {
     width: 161px;
@@ -149,12 +165,26 @@
       bottom: 17px;
 
       rotate: 45deg;
+
+      &:hover{
+        background: #907e82;
+      }
     }
   }
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section__contacts{
+    background: linear-gradient(
+      to bottom,
+      #ffffff 22%,
+      #fff5f6 22%,
+      #fff5f6 78%,
+    );
+    
+  }
+
   .contacts {
     font-size: 14px;
     line-height: 1.8;
@@ -251,6 +281,17 @@
 
 /* DESKTOP*/
 @media screen and (min-width: 1280px) {
+  .section__contacts{
+    background: linear-gradient(
+      to bottom,
+      #ffffff 24%,
+      #fff5f6 24%,
+      #fff5f6 78%,
+    );
+    
+  }
+
+
   .contacts {
     flex-direction: row;
     justify-content: center;
