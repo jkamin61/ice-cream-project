@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about__primary-title {
     font-size: 26px;
     line-height: 1,5;
@@ -126,7 +126,7 @@
     margin-left: 0px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .about__primary-title {
     font-size: 30px;
     line-height: 1,4;
