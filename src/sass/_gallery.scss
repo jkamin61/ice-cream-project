@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .gallery {
   background-color: getColor('background');
   height: 145px;
@@ -8,7 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/mobile/gallerybg.webp);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       &__container {
         background-image: url(../images/mobile/gallerybg@2x.webp);
       }
@@ -23,7 +30,7 @@
     &__bg-img {
       height: 264px;
       background-image: url(../images/tablet/gallerybg.webp);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         &__container {
           background-image: url(../images/tablet/gallerybg@2x.webp);
         }
@@ -39,7 +46,7 @@
     &__bg-img {
       height: 430px;
       background-image: url(../images/desktop/gallerybg.webp);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         &__container {
           background-image: url(../images/desktop/gallerybg@2x.webp);
         }
