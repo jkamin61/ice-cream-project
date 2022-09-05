@@ -2,12 +2,13 @@
   
   background: linear-gradient(
     to bottom,
-    #ffffff 12%,
-    #fff5f6 12%,
-    #fff5f6 88%,
+    getColor('basic-color') 12%,
+    getColor('background') 12%,
+    getColor('background') 88%,
   );
   
 }
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -25,8 +26,9 @@
   }
 
   &__item {
-    position: relative;
-    max-width: 220px;
+    
+    width: calc(100vw-50px);
+    max-width: 330px;
     display: flex;
     flex-direction: column;
     padding: 43px 20px 43px 20px;
@@ -78,8 +80,7 @@
     color: getColor('title-helper');
   }
   &__underline {
-    display: block;
-    width: 100%;
+    max-width: 330px;
     padding-top: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #999;
@@ -167,7 +168,7 @@
       rotate: 45deg;
 
       &:hover{
-        background: #907e82;
+        background: getColor('information');
       }
     }
   }
@@ -178,9 +179,9 @@
   .section__contacts{
     background: linear-gradient(
       to bottom,
-      #ffffff 22%,
-      #fff5f6 22%,
-      #fff5f6 78%,
+      getColor('basic-color') 22%,
+      getColor('background') 22%,
+      getColor('background') 78%,
     );
     
   }
@@ -192,8 +193,9 @@
     flex-direction: row;
 
     &__item {
-      width: 100%;
-      max-width: 220px;
+      display: flex;
+      width: calc(100vw-50px);
+      max-width: 330px;
       margin: 0 10px;
 
       &--margin-left{
@@ -207,8 +209,8 @@
 
     &__description {
       
-      width: 100%;
-      max-width: 145px;
+      
+      
       line-height: 1.6;
     }
     &__header {
@@ -284,9 +286,9 @@
   .section__contacts{
     background: linear-gradient(
       to bottom,
-      #ffffff 24%,
-      #fff5f6 24%,
-      #fff5f6 78%,
+      getColor('basic-color') 24%,
+      getColor('background') 24%,
+      getColor('background') 78%,
     );
     
   }
@@ -299,8 +301,8 @@
     line-height: 1.9;
 
     &__item {
-      width: 100%;
-      max-width: 330px;
+      
+      width: 330px;
       margin: 10px 15px;
 
       &--margin-left{
