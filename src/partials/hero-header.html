@@ -8,7 +8,6 @@
           srcset="./images/desktop/logo@2x.webp 2x"
         /></figure
     ></a>
-
     <ul class="header__nav">
       <li><a href="#home" class="header__nav-item header__nav--home">Home</a></li>
       <li><a href="#about" class="header__nav-item">About us</a></li>
@@ -16,7 +15,6 @@
       <li><a href="#products" class="header__nav-item">Our products</a></li>
       <li><a href="#contact" class="header__nav-item">Contact</a></li>
     </ul>
-
     <!-- <div class="mobile-menu-container">
           <button
             class="menu-toggle js-open-menu"
@@ -38,13 +36,19 @@
             </svg>
           </button>
         </div> -->
+    <div
+      class="header__menu-mbl js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
     <div class="header__menu-mbl js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg width="20" height="12" class="menu-toggle__icon--open">
         <use href="./images/icons.svg#icon-Burger"></use>
       </svg>
     </div>
 
-    <button type="button" class="header__btn" data-modal-open>
+    <button type="button" class="header__btn">
+    <button type="button" class="header__btn" id="modal-buy-now__open">
       <span>Buy now</span
       ><svg>
         <use href="./images/icons.svg#icon-Vector-1"></use>
@@ -55,12 +59,16 @@
   <div>
     <div>
       <a href="#products"> <button type="button" class="header__prodts-btn">Products</button></a>
-
       <a href="#made"> <button type="menu" class="header__made-btn">How it's made?</button></a>
     </div>
     <!-- <svg class="header__eclipse">
       <use href="./images/icons.svg#icon-Ellipse-3-desktop"></use>
     </svg> -->
+
+    <figure class="header__ic-bg">
+      <img src="./images/mobile/ellipse.webp" alt="" srcset="./images/mobile/ellipse@2x.webp 2x" />
+    </figure>
+
     <figure class="header__pic-ice">
       <picture
         ><source
@@ -75,7 +83,6 @@
         <img src="./images/mobile/heropic3.webp" alt="Icecream"
       /></picture>
     </figure>
-
     <div class="header__cafes">
       <span class="header__cafes-nr">16</span>
       <span class="header__cafes-facility">cafes</span>
@@ -84,7 +91,6 @@
       <span class="header__trucks-nr">23</span>
       <span class="header__trucks-facility">food trucks</span>
     </div>
-
     <figure class="header__pic-milk">
       <picture>
         <source
@@ -96,7 +102,6 @@
         <img src="./images/tablet/heropic2.webp" alt="jug of milk"
       /></picture>
     </figure>
-
     <p class="header__lorem">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et
@@ -109,7 +114,6 @@
           srcset="./images/desktop/arrowhero@2x.webp 2x"
         /></figure
     ></a>
-
     <figure class="header__pic-tasty">
       <picture>
         <source
