@@ -46,7 +46,7 @@
   padding: 32px;
   background-color: getColor("mobile-menu");
   z-index: 999;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 250ms ease-in-out;
 
   &.is-open {
