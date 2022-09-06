@@ -1,35 +1,38 @@
 <!-- The Modal -->
-<div id="modal-buy-now" class="modal-buy-now">
+<div id="modal-buy" class="modal-buy">
 
     <!-- Modal content -->
-    <div class="modal-buy-now__content">
-        <span class="modal-buy-now__close">&times;</span>
+    <div class="modal-buy__content">
+        <span class="modal-buy__close">&times;</span>
 
-        <h3 class="modal-buy-now__title">Make your order here!</h3>
+        <h3 class="modal-buy__title">Make your order here!</h3>
 
-        <div class="modal-buy-now__container">
+        <div class="modal-buy__container">
             <form>
-                <label class="modal-buy-now__label" for="name">Name</label>
-                <input class="modal-buy-now__input" type="text" id="fname" name="name" placeholder="Your name.."
+                <label class="modal-buy__label" for="name">Name</label>
+                <input class="modal-buy__input" type="text" id="name" name="name" placeholder="Your name.."
                     required>
 
-                <label class="modal-buy-now__label" for="name">Address</label>
-                <input class="modal-buy-now__input" type="text" id="address" name="Address" placeholder="Your address.."
+                <label class="modal-buy__label" for="name">Address</label>
+                <input class="modal-buy__input" type="text" id="address" name="Address" placeholder="Your address.."
                     required>
 
-                <label class="modal-buy-now__label" for="dessert">Dessert</label>
-                <select class="modal-buy-now__select" id="dessert" name="country" required>
+                <label class="modal-buy__label" for="email"><b>Email</b></label>
+                <input class="modal-buy__input" type="text" placeholder="Your Email.." name="email" required>
+
+                <label class="modal-buy__label" for="dessert">Dessert</label>
+                <select class="modal-buy__select" id="dessert" name="country" required>
                     <option value="Ice Cream">Ice Cream</option>
                     <option value="Dessert">Ice Coffee</option>
                     <option value="Milkshake">Milkshake</option>
                 </select>
 
-                <label class="modal-buy-now__label" for="subject">Subject</label>
-                <textarea class="modal-buy-now__textarea" id="subject" name="subject" placeholder="Write something.."
+                <label class="modal-buy__label" for="subject">Additional info</label>
+                <textarea class="modal-buy__textarea" id="subject" name="subject" placeholder="Write something.."
                     style="height:100px"></textarea>
 
-                <div class="modal-buy-now__btn-box">
-                    <button type="submit" class="modal-buy-now__btn">Submit</button>
+                <div class="modal-buy__btn-box">
+                    <button type="submit" class="modal-buy__btn">Submit</button>
                 </div>
 
             </form>
