@@ -4,7 +4,6 @@
     background-color: #FFF5F6;
     border-radius: 10px;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
@@ -38,8 +37,8 @@
         color: #907E82;
     }
 }
-.open-popup {
-    visibility: visible;
-    top: 50%; 
-    transform: translate (-50%, -50%) scale (1);
-}
+// .open-popup {
+//     visibility: visible;
+//     top: 50%; 
+//     transform: translate (-50%, -50%) scale (1);
+// }
