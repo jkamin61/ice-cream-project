@@ -1,9 +1,9 @@
         let popup = document.getElementById("popup");
 
         function openPopup() {
-            popup.classList.add("popup__btn");
+            popup.classList.add("open-popup");
         }
 
         function closePopup() {
-            popup.classList.remove("popup__btn");
+            popup.classList.remove("open-popup");
         }
