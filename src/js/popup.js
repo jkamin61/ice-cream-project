@@ -14,12 +14,12 @@
 
     // When the user clicks on <span> (x), close the modal
     closePopup.onclick = function () {
-        popup.style.transform = "translate(-100%, -100%) scale(0.1)";
+        popup.style.transform = "translate(-100%, -100%) scale(0.0)";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == popup) {
-            popup.style.transform = "translate(-100%, -100%) scale(0.1)";
+            popup.style.transform = "translate(-100%, -100%) scale(0.0)";
         }
     }
