@@ -48,7 +48,8 @@
 
     &__label {
         color: getColor("basic-color");
-        padding: 15px;
+        padding: 10px;
+        margin-top: 10px;
     }
 
     &__input[type=text], &__select, &__textarea {
@@ -59,6 +60,15 @@
         margin-top: 6px;
         margin-bottom: 16px;
         resize: vertical;
+        border: 0;
+        outline: 0;
+    }
+
+    &__select {
+        position: relative;
+        display: inline-block;
+        right: 15px;
+        left: 2px;
     }
 
     &__btn {
