@@ -10,9 +10,16 @@
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   font-weight: 500;
   font-size: 12px;
@@ -29,20 +36,32 @@
     
     width: calc(100vw-50px);
     max-width: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 43px 20px 43px 20px;
     margin: 10px 30px 10px 30px;
     background: getColor('basic-color');
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     
   }
 
   &__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 500;
     font-size: 12px;
     color: getColor('basic-color');
@@ -99,10 +118,19 @@
   }
 
   &__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 54px;
   }
 }
@@ -189,10 +217,17 @@
   .contacts {
     font-size: 14px;
     line-height: 1.8;
-    justify-content: center;
-    flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 
     &__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       width: calc(100vw-50px);
       max-width: 330px;
@@ -219,9 +254,16 @@
       line-height: 1.9;
     }
     &__button {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-top: 81px;
     }
 
@@ -232,6 +274,8 @@
       line-height: 1.8;
     }
   }
+
+
   .pushbutton {
     height: 44px;
     margin-left: 15px;
@@ -295,8 +339,13 @@
 
 
   .contacts {
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 16px;
     line-height: 1.9;
 
@@ -330,9 +379,16 @@
       line-height: 1.9;
     }
     &__button {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-top: 76px;
     }
   }
