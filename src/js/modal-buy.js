@@ -2,7 +2,7 @@
     var modal = document.getElementById("modal-buy-now");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("modal-buy-now__open");
+    var btn = document.getElementById("modal-buy-now__btn");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
