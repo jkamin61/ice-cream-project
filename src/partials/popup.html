@@ -1,6 +1,7 @@
 <style>
 
-/* Scss do partiala sass */
+/* ----> Scss do partiala sass 
+
 .popup {
     width: 350px;
     background-color: #FFF5F6;
@@ -49,13 +50,13 @@
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-}
+} */
 
 /* CSS - zostawiam do szybkiego podglądu popupa, do usunięcia po wrzucenia scss do sass */
 
 .popup {
     width: 350px;
-    background-color: #FFF5F6;
+    background-color: getColor("background");
     border-radius: 10px;
     position: absolute;
     top: 0;
@@ -79,7 +80,7 @@
 
 
 .popup__btn {
-    background-color: #D41443;
+    background-color:  getColor("title-color");
     font-family: 'DM Sans';
     font-size: 8px;
     line-height: 1.25;
@@ -88,7 +89,7 @@
     font-size: 14px;
     border-radius: 20px;
     cursor: pointer;
-    color: WHITE;
+    color:  getColor("basic-color");
     width: 100px;
     height: 34px;
     margin-bottom: 30px;
@@ -101,7 +102,7 @@
     line-height: 176%;
     letter-spacing: 0.04em;
     padding: 30px;
-    color: #907E82;
+    color:  getColor("information");
     }
 
 </style>
