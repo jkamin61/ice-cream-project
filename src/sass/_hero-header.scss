@@ -25,6 +25,7 @@ h1 {
   min-width: 320px;
   max-width: 767px;
   position: relative;
+  overflow: hidden;
   &__menu-mbl {
     z-index: 4;
     cursor: pointer;
