@@ -1,4 +1,4 @@
-    .modal-buy-now {
+    .modal-buy {
         display: none;
         position: fixed;
         z-index: 100;
@@ -13,7 +13,7 @@
     }
 
     /* Modal Content */
-    .modal-buy-now__content {
+    .modal-buy__content {
         background-color: #FFB8CA;
         margin: auto;
         padding: 20px;
@@ -24,22 +24,22 @@
     }
 
     /* The Close Button */
-    .modal-buy-now__close {
+    .modal-buy__close {
         color: white;
         float: right;
         font-size: 52px;
         transition: transform 250ms ease-in-out;
     }
 
-    .modal-buy-now__close:hover,
-    .modal-buy-now__close:focus {
+    .modal-buy__close:hover,
+    .modal-buy__close:focus {
         color: #ECEBEB;
         text-decoration: none;
         cursor: pointer;
         transform: rotate(-180deg);
     }
 
-    .modal-buy-now__title {
+    .modal-buy__title {
         font-family: 'Titan One';
         font-size: 28px;
         line-height: 66px;
@@ -57,14 +57,14 @@
         box-sizing: border-box;
     }
 
-    .modal-buy-now__label {
+    .modal-buy__label {
         color: white;
         padding: 15px;
     }
 
-    .modal-buy-now__input[type=text],
-    .modal-buy-now__select,
-    .modal-buy-now__textarea {
+    .modal-buy__input[type=text],
+    .modal-buy__select,
+    .modal-buy__textarea {
         width: 100%;
         padding: 12px;
         border: 1px solid #ccc;
@@ -75,7 +75,7 @@
         resize: vertical;
     }
 
-    .modal-buy-now__btn {
+    .modal-buy__btn {
         font-family: 'DM Sans';
         border: none;
         padding: 10px 40px;
@@ -90,17 +90,17 @@
     }
 
 
-    .modal-buy-now__btn:hover {
+    .modal-buy__btn:hover {
         background-color: #ECEBEB;
     }
 
-    .modal-buy-now__btn-box {
+    .modal-buy__btn-box {
         display: flex;
         justify-content: center;
         padding: 20px 0;
     }
 
-    .modal-buy-now__container {
+    .modal-buy__container {
         border-radius: 15px;
         background-color: #FFB8CA;
         padding: 20px;
