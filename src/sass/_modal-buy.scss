@@ -24,15 +24,15 @@
     }
 
     /* The Close Button */
-    .close {
+    .modal-buy-now__close {
         color: white;
         float: right;
         font-size: 52px;
         transition: transform 250ms ease-in-out;
     }
 
-    .close:hover,
-    .close:focus {
+    .modal-buy-now__close:hover,
+    .modal-buy-now__close:focus {
         color: #ECEBEB;
         text-decoration: none;
         cursor: pointer;
