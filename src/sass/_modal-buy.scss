@@ -1,20 +1,18 @@
-    .modal-buy {
-        display: none;
-        position: fixed;
-        z-index: 100;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.4);
-    }
+.modal-buy {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 
-    /* Modal Content */
-    .modal-buy__content {
-        background-color: #FFB8CA;
+    &__content {
+        background-color: getColor("main-color");
         margin: auto;
         padding: 20px;
         border-radius: 15px;
@@ -23,51 +21,39 @@
         min-height: 650px;
     }
 
-    /* The Close Button */
-    .modal-buy__close {
-        color: white;
+    &__close {
+        color: getColor("basic-color");
         float: right;
         font-size: 52px;
         transition: transform 250ms ease-in-out;
+
+        &:hover, &:focus {
+            color: getColor("button-hover");
+            text-decoration: none;
+            cursor: pointer;
+            transform: rotate(-180deg);
+        }
     }
 
-    .modal-buy__close:hover,
-    .modal-buy__close:focus {
-        color: #ECEBEB;
-        text-decoration: none;
-        cursor: pointer;
-        transform: rotate(-180deg);
-    }
-
-    .modal-buy__title {
+    &__title {
         font-family: 'Titan One';
         font-size: 28px;
         line-height: 66px;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: #D41443;
+        color: getColor("title-color");
         padding-top: 60px;
-
     }
 
-    /* Form style */
-
-    * {
-        box-sizing: border-box;
-    }
-
-    .modal-buy__label {
-        color: white;
+    &__label {
+        color: getColor("basic-color");
         padding: 15px;
     }
 
-    .modal-buy__input[type=text],
-    .modal-buy__select,
-    .modal-buy__textarea {
+    &__input[type=text], &__select, &__textarea {
         width: 100%;
         padding: 12px;
-        border: 1px solid #ccc;
         border-radius: 15px;
         box-sizing: border-box;
         margin-top: 6px;
@@ -75,7 +61,7 @@
         resize: vertical;
     }
 
-    .modal-buy__btn {
+    &__btn {
         font-family: 'DM Sans';
         border: none;
         padding: 10px 40px;
@@ -85,23 +71,23 @@
         line-height: 1.25;
         letter-spacing: 0em;
         text-align: center;
-        color: #d41443;
-        background-color: #ffffff;
+        color: getColor("button-color");
+        background-color: getColor("basic-color");
+
+        &:hover {
+            background-color: getColor("button-hover");
+        }
+        
+        &-box {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
     }
 
-
-    .modal-buy__btn:hover {
-        background-color: #ECEBEB;
-    }
-
-    .modal-buy__btn-box {
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
-    }
-
-    .modal-buy__container {
+    &__container {
         border-radius: 15px;
-        background-color: #FFB8CA;
+        background-color: getColor("main-color");
         padding: 20px;
     }
+}
