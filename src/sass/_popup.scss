@@ -37,6 +37,30 @@
         color: #907E82;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .popup {
+        top: 11%;
+        left: 22%;
+    }
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .popup {
+        top: 15%;
+        left: 32%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .popup {
+        top: 20%;
+        left: 36.5%;
+      }
+}
+
 // .open-popup {
 //     visibility: visible;
 //     top: 50%; 
