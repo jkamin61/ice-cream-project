@@ -4,6 +4,12 @@
     // Get the button that opens the modal
     var openPopup = document.getElementById("open-popup");
 
+    // Get the button that opens the modal
+    var openPopup = document.getElementById("open-popup1");
+
+    // Get the button that opens the modal
+    var openPopup = document.getElementById("open-popup2");
+
     // Get the <span> element that closes the modal
     var closePopup = document.getElementsByClassName("close-popup")[0];
 
