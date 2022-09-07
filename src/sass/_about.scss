@@ -30,8 +30,10 @@
   margin: auto;
   margin-bottom: 26px;
 }
-.about__pic-sec {
-  flex: 0 0 100%;
+.about__pic-sec { 
+-webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
 }
 .about__pic {
@@ -47,7 +49,6 @@
   line-height: 1, 6;
   color: getColor('text');
 }
-
 .about__secondary-paragraph {
   font-family: 'DM Sans';
   font-style: normal;
@@ -57,7 +58,6 @@
   color: getColor('information');
   margin-top: 47px;
 }
-
 .about__button {
   width: 176px;
   height: 44px;
@@ -69,14 +69,19 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 3;
-  display: flex;
-  justify-content: center;
-  gap: 13.62px;
-  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+-webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 13.62px; 
+-webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: auto;
   margin-top: 17px;
-
   &:hover {
     background-color: getColor('button-hover');
   }
@@ -93,7 +98,6 @@
     margin-right: 50px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .about {
     background-image: none;
@@ -110,7 +114,9 @@
     width: 429px;
   }
   .about__pic-sec {
-    flex: 0 0 50%;
+-webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     max-width: 50%;
   }
   .about__first-paragraph {
@@ -126,12 +132,18 @@
     margin-top: 49px;
   }
   .about__two-sections {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;   
+-webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 17px;
-  }
-  .about__space {
+  }  
+.about__space {
     display: none;
   }
   .about__text-sec {
@@ -181,7 +193,10 @@
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
   screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and(-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and(-o-min-device-pixel-ratio: 2/1),
   screen and (max-width: 767px) and(min-resolution: 2dppx) {
   .about {
     background-image: url(../images/mobile/advantagesbg@2x.webp);
@@ -189,6 +204,7 @@
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1),
   screen and (min-width: 1280px) and (min-resolution: 192dpi),
   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about {
